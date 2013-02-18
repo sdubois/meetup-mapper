@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link type="text/css" href="style.css" rel="stylesheet" media="all" />
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+		<script type="text/javascript" src="http://www.it.rit.edu/~jxs/javascript/jquery.min.js"></script>
+		<script type="text/javascript" src="project3.js"></script>
+
+		<script>
+		    document.onready = function() {
+				document.getElementById( "postalSearchButton" ).onclick = function( event ) {
+					makeSearch( document.getElementById( "postalSearchBox" ).value );
+				};
+				document.getElementById( "clearNodes" ).onclick = function( event ) {
+					map.clearMarkers();
+					clearNode(document.getElementById("weather"));
+					initialize();
+				};
+				document.getElementById( "postalSearchBox" ).onkeypress = function( event ) {
+				if( event.which == 13 ) {
+					makeSearch( document.getElementById( "postalSearchBox" ).value );
+        }
+      };
+			}
+		</script>
+		<title>Web Client-Side Programming - Project 3</title>
+	</head>
+	
+	<body onload="initialize()">
+		<div id="content">
+		<h1>Project 3</h1>
+		<h2>Meetup Mapper</h2>
+		<p>Search for Meetup.com events in your area and view them in a map. Uses the Google Maps API, WeatherUnderground API, and Meetup API. Also provides local weather conditions.</p>
+	
+		<div id="searchArea">
+			Search by postal code: <input id="postalSearchBox" type="text"  size="10" />
+			<input id="postalSearchButton" type="button" value="Search"/>
+			<input id="clearNodes" type="button" value="Clear results"/>
+		</div>
+
+		<div id="weather"></div>
+		<div id="spacer"></div>
+		<div id="map_canvas"></div>
+		<footer> Steven DuBois - 2012 - <a href="about.html">About</a> </footer>
+		</div>
+	</body>
+</html>

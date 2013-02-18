@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link type="text/css" href="style.css" rel="stylesheet" media="all" />
+
+		<title>Web Client-Side Programming - Project 3</title>
+	</head>
+	
+	<body onload="initialize()">
+		<div id="content">
+		<h1>Project 3</h1>
+		<h2>Meetup Mapper</h2>
+		<p>Search for Meetup.com events in your area and view them in a map. Uses the Google Maps API, Google Places API, and Meetup API. Also provides local attraction suggestions based on user input.</p>
+	
+		<h3>About</h3>
+		<p>
+		I chose to use the Meetup API because it had excellent documentation (including a very helpful interactive feature), 
+		and provided me with plenty of geolocation data. I was able to simply make a query, store it in JSON and then pull some
+		GPS coordiantes from it. I then send this data to the Google Maps API, providing you with an interactive map of Meetup.com
+		events in your area. When you click on an event, you get a full description of it, along with a link to view the event page
+		on the Meetup website.
+		</p>
+		<p>
+		I am also using the WeatherUnderground API to display weather around your meetup events. So if you decide to join the Rochester Unicyclists
+		on a trip around the city, you won't be worried about getting caught in a storm.
+		</p>
+		
+		<footer> Steven DuBois - 2012 - <a href="about.html">About</a> </footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+body{
+font-family: Helvetica, Arial, sans-serif;
+}
+h2{
+color:  	#C80000 ;
+}
+#content{
+
+margin: auto;
+padding: 2px 10px;
+background: #eee;
+width: 80%;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+
+#searchArea{
+padding-bottom: 20px;
+}
+
+#spacer{
+display: block;
+height: 20px;
+}
+
+#map_canvas{
+width: 95%;
+height: 600px;
+margin: auto;
+border-width: 3px;
+border-style: solid;
+border-color: #C80000;
+border-radius: 10px;
+
+}
+
+#weather{
+font-size: .8em;
+width: 40%;
+padding: 20px;
+margin: auto;
+
+}
+
+#weather strong{
+font-size: 1.3em;
+margin-bottom: 30px;
+text-align: center;
+}
+#weather img{
+float: left;
+padding-right: 20px;
+}
+
+footer{
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: .8em;
+}
